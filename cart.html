@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="Stylesheet" href="cart.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h2><span>Thala</span>7.</h2>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#brands">Brands<i class="fa fa-angle-down"></i></a></li>
+                <li><a href="#more">More<i class="fa fa-angle-down"></i></a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <div class="search">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+                <div class="cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span>0</span>
+                </div>
+                <div class="nav-right-image">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.CIn8fInVEpY4ti24C9LfWgHaFJ?r=0&pid=Api&P=0&h=180" alt="Profile">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="cart-container">
+
+    <div class="left">
+
+        <h1>Shopping Cart</h1>
+
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th></th>
+            </tr>
+
+            <tr>
+                <td class="product">
+                    <img src="shoe1.png">
+                    <span>Running Shoes</span>
+
+                </td>
+
+                <td>
+                    <input type="number" value="1" min="1">
+                </td>
+
+                <td>₹1334</td>
+
+                <td>
+                    <i class="fa-solid fa-trash"></i>
+               </td>
+            </tr>
+        </table>
+        <a href="product.html" class="continue">
+            ← Continue Shopping
+        </a>
+    </div>
+
+    <div class="summary">
+
+        <h2>Order Summary</h2>
+         
+        <div class="coupon-box">
+
+           <input type="text" placeholder="Coupon Code">
+            <button class="coupon">
+            Apply Coupon
+            </button>
+        </div> 
+
+        <div class="price-row">
+            <span>Sub Total</span>
+            <span>₹1334</span>
+        </div>
+
+        <div class="price-row">
+            <span>Tax</span>
+            <span>₹100</span>
+        </div>
+
+        <div class="price-row">
+            <span>Discount</span>
+            <span>-₹150</span>
+        </div>
+        <hr>
+
+        <div class="price-row total">
+            <span>Total</span>
+            <span>₹1284</span>
+        </div>
+
+       <a href="payment.html">
+          <button class="pay">
+          Pay Now ₹4,999
+          </button>
+        </a>
+
+        <div class="payment-icons">
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <i class="fa-brands fa-google-pay"></i>
+            <i class="fa-brands fa-paypal"></i>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

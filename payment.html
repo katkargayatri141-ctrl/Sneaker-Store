@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="payment.css">
+     <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h2><span>Thala</span>7.</h2>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#brands">Brands<i class="fa fa-angle-down"></i></a></li>
+                <li><a href="#more">More<i class="fa fa-angle-down"></i></a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <div class="search">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+                <div class="cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span>0</span>
+                </div>
+                <div class="nav-right-image">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.CIn8fInVEpY4ti24C9LfWgHaFJ?r=0&pid=Api&P=0&h=180" alt="Profile">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="payment-container">
+        <div class="left">
+            <p class="checkout">checkout</p>
+            <h2>Contact Details</h2>
+            <label>Email ID</label>
+            <input type="email" placeholder="Enter your email">
+            <h2 class="payment-heading">Payment</h2>
+            <div class="payment-box">
+                <div class="payment-methods">
+                    <div class="method active">
+                        <i class="fa-regular fa-credit-card"></i>
+                        <p>Card</p>
+                    </div>
+                    <div class="method">
+                        <i class="fa-brands fa-bitcoin"></i>
+                        <p>Crypto</p>
+                    </div>
+                    <div class="method">  
+                        <i class="fa-solid fa-building-columns"></i>
+                        <p>Bank</p>
+                    </div>
+                    <div class="method">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                </div>
+                <label>Card Number</label>
+                <input type="text" placeholder="1234 5678 9012">
+                <div class="row">
+                    <div>
+                        <label>Expiry</label>
+                        <input type="text" placeholder="MM/YY">
+                    </div>
+                    <div>
+                        <label>CVV</label>
+                        <input type="password" placeholder="****">
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <label>Country</label>
+                        <select>
+                            <option>India</option>
+                            <option>USE</option>
+                            <option>UK</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>ZIP</label>
+                        <input type="text" placeholder="422001">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <h1>Order Summary</h1>
+            <div class="summary-card">
+                <label>Enter Coupon Code</label>
+                <div class="coupon-box">
+                    <input type="text" placeholder="COUPON CODE">
+                    <button>Apply Coupon</button>
+                </div>
+                <div class="price">
+                    <span>Sub Total</span>
+                    <span>₹1334</span>
+                </div>
+                <div class="price">
+                    <span>Taxes</span>
+                    <span>₹100</span>
+                </div>
+                <div class="price">
+                    <span>Discount</span>
+                    <span>-₹150</span>
+                </div>
+                <hr>
+                <div class="price total">
+                    <span>Total</span>
+                    <span>₹1284</span>
+                </div>
+            </div>
+            <button class="pay-btn">
+            Pay Now ₹1284
+            </button>
+            <div class="payments">
+                <i class="fa-brands fa-google-pay"></i>
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-brands fa-paypal"></i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

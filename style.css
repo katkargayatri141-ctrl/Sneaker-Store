@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color:whitesmoke;
+}
+
+nav{
+    width: 90%;
+    margin: auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    text-decoration: none;
+}
+
+.logo span{
+    color: orange;
+}
+
+.logo{
+    font-size: 18px;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #333;
+    font-size: 17px;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    border-radius: 25px;
+}
+
+.cart{
+    display: flex;
+    gap: 8px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.right img{
+    width: 40px;
+    height: 40px;
+}
+
+.hero{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+}
+
+.left{
+    width: 45%;
+}
+
+.left h1{
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 75px;
+}
+
+.left span{
+    color: orange;
+}
+
+.left p{
+    margin: 30px 0;
+    font-size: 18px;
+    color: #555;
+    line-height: 30px;
+
+}
+
+.shop-btn{
+    display:inline-block;
+    background:#111;
+    color:white;
+    text-decoration:none;
+    padding:18px 55px;
+    border-radius:35px;
+    font-size:20px;
+    transition:.3s;
+}
+
+.shop-btn:hover{
+    background:orange;
+}
+
+.right-image{
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-image img{
+    width:700px;
+    height:500px;
+    animation:float 3s infinite ease-in-out;
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-20px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
+}
+
+.service{
+    width:100%;
+    min-height:120px;
+    background:#d97706;   
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    color:white;
+    padding:20px 40px;
+}
+
+.service-box{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.service-box i{
+    font-size:35px;
+}
+
+.service-box h2{
+    font-size:32px;
+    font-weight:600;
+}
+
+.service-box p{
+    font-size:18px;
+    color:#f3f3f3;
+}

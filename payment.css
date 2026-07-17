@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color:whitesmoke;
+}
+
+nav{
+    width: 90%;
+    margin: auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    text-decoration: none;
+}
+
+.logo span{
+    color: orange;
+}
+
+.logo{
+    font-size: 18px;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #333;
+    font-size: 17px;
+}
+
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    border-radius: 25px;
+}
+
+.cart{
+    display: flex;
+    gap: 8px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nav-right-image img{
+    width: 40px;
+    height: 40px;
+}
+
+.payment-container{
+    width:90%;
+    margin:40px auto;
+    display:flex;
+    justify-content:space-between;
+    gap:40px;
+}
+
+.left{
+    width:58%;
+}
+
+.right{
+    width:38%;
+}
+
+.checkout{
+    color:#888;
+    font-size:18px;
+    margin-bottom:25px;
+}
+
+.left h2{
+    font-size:34px;
+    margin-bottom:20px;
+}
+
+.left label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+.left input,
+.left select{
+    width:100%;
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    outline:none;
+    font-size:16px;
+    background:#fff;
+}
+
+.payment-heading{
+    margin-top:35px;
+}
+
+.payment-box{
+    background:white;
+    border:1px solid #ddd;
+    border-radius:15px;
+    padding:20px;
+}
+
+.payment-methods{
+    display:flex;
+    gap:15px;
+    margin-bottom:25px;
+}
+
+.method{
+    flex:1;
+    border:2px solid #ddd;
+    border-radius:10px;
+    text-align:center;
+    padding:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.method i{
+    font-size:24px;
+    margin-bottom:10px;
+    color:#555;
+}
+
+.method p{
+    font-size:18px;
+}
+
+.active{
+    border-color:#ff9800;
+}
+
+.active i,
+.active p{
+    color:#ff9800;
+}
+
+.row{
+    display:flex;
+    gap:20px;
+    margin-top:20px;
+}
+
+.row div{
+    flex:1;
+}
+
+.right h1{
+    text-align:center;
+    margin-bottom:30px;
+    font-size:38px;
+    color:#333;
+}
+
+.summary-card{
+    background:#fff;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+.summary-card label{
+    font-weight:600;
+    color:#555;
+}
+
+.coupon-box{
+    display:flex;
+    gap:10px;
+    margin:18px 0 25px;
+}
+
+.coupon-box input{
+    flex:1;
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    outline:none;
+}
+
+.coupon-box button{
+    width:150px;
+    background:#2f73ff;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+.coupon-box button:hover{
+    background:#155dfc;
+}
+
+.price{
+    display:flex;
+    justify-content:space-between;
+    margin:18px 0;
+    color:#666;
+    font-size:18px;
+}
+
+.total{
+    font-size:28px;
+    font-weight:bold;
+    color:#222;
+}
+
+.summary-card hr{
+    margin:18px 0;
+    border:0;
+    border-top:1px solid #ddd;
+}
+
+.pay-btn{
+    width:100%;
+    margin-top:30px;
+    padding:18px;
+    background:#ff9f2f;
+    color:#fff;
+    border:none;
+    border-radius:12px;
+    font-size:24px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.pay-btn:hover{
+    background:#ff8a00;
+}
+
+.payments{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:25px;
+    margin-top:25px;
+    font-size:45px;
+    color:#158fc4;
+}
+
+.payments i:hover{
+    color:#ff9800;
+}
+
+@media(max-width:900px){
+
+.payment-container{
+    flex-direction:column;
+}
+
+.left,
+.right{
+    width:100%;
+}
+
+.nav-links{
+    display:none;
+}
+
+.search{
+    display:none;
+}
+
+.row{
+    flex-direction:column;
+}
+
+.coupon-box{
+    flex-direction:column;
+}
+
+.coupon-box button{
+    width:100%;
+}
+
+}
